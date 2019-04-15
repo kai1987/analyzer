@@ -64,14 +64,14 @@ func TestReport(t *testing.T) {
 func TestMain(m *testing.M) {
 	setup()
 	code := m.Run()
-	//teardown()
+	teardown()
 	os.Exit(code)
 }
 
 func setup() {
-	for i := 1; i < 9; i++ {
+	for i := 1; i < 3; i++ {
 		str := ""
-		for j := 0; j < 10000; j++ {
+		for j := 0; j < 1000; j++ {
 			str += fmt.Sprintf("10.2.3.4 [2018/13/10:14:02:39] \"GET /api/playeritems?playerId=3\" 200 %d\n", rand.Intn(300))
 		}
 		err := ioutil.WriteFile(fmt.Sprintf("2018-04-0%d.log", i), []byte(str), 0644)

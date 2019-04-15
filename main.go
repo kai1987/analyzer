@@ -5,7 +5,7 @@ import (
 	"log"
 )
 
-var dir = flag.String("d", ".", "logs dir")
+var dir = flag.String("d", "/var/log/httpd", "logs dir")
 var fileNameReg = flag.String("f", ".*.log", "file name regexp")
 var logReg = flag.String("l", ".* /api/playeritems.* ([0-9]+)$", "one line log regexp")
 var timePosition = flag.Int("t", 1, "time's position in one line log regexp")
