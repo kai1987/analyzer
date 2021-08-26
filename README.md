@@ -63,4 +63,3 @@ Usage of ./analyzer:
 ```
 go test -coverprofile analyzer
 ```
-
