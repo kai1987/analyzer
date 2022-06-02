@@ -1,5 +1,5 @@
 # analyzer
-this is a simple log analyzer.
+this is a simple log analyzer....
 
 [![GoDoc](https://godoc.org/github.com/kai1987/analyzer?status.svg)](https://godoc.org/github.com/kai1987/analyzer)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
